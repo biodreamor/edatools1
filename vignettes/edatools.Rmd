@@ -1,0 +1,27 @@
+---
+title: "Introduction to edatools"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to edatools}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+the "edatools" package is a demonstration project for learning how
+to build an R package
+
+
+```{r example}
+library(edatools)
+df_info <- contents(happiness)
+print(df_info,digits=3)
+```
+
